@@ -283,12 +283,26 @@
             }
         };
 
+        const wheelActions = (event) => {
+            if (event.deltaY < 0) {
+                shower.prev(event.shiftKey);
+            } else if (event.deltaY > 0) {
+                shower.next(event.shiftKey);
+            }
+        };
+
         shower.container.addEventListener('keydown', (event) => {
             if (event.defaultPrevented) return;
             if (isInteractiveElement(event.target)) return;
 
             doSlideActions(event);
             doModeActions(event);
+        });
+        
+        shower.container.addEventListener('wheel', (event) => {
+            if (shower.isFullMode) {
+                wheelActions(event);
+            }
         });
     };
 
