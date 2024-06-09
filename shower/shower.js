@@ -385,6 +385,9 @@
             if (activeIndex < innerSteps.length) {
                 event.preventDefault();
             }
+            if (activeIndex > innerSteps.length) {
+                activeIndex = 0;
+            }
         });
 
         shower.addEventListener('prev', (event) => {
