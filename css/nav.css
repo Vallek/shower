@@ -1,0 +1,42 @@
+vallek-shower-nav {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+
+.shower.list vallek-shower-nav {
+  display: none;
+}
+
+.shower.full vallek-shower-nav {
+  display: flex;
+}
+
+.shower.nav_bottom-right vallek-shower-nav {
+	left: initial;
+	right: 0;
+	bottom: 0;
+	transform: initial;
+}
+
+.shower.nav_bottom-left vallek-shower-nav {
+	left: 0;
+	bottom: 0;
+	transform: initial;
+}
+
+.shower.nav_top-right vallek-shower-nav {
+	right: 0;
+	left: initial;
+	top: 0;
+	bottom: initial;
+	transform: initial;
+}
+
+.shower.nav_top-left vallek-shower-nav {
+	left: 0;
+	top: 0;
+	bottom: initial;
+	transform: initial;
+}
