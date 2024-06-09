@@ -5,6 +5,7 @@ Forked from [Shower Presentation Template](https://github.com/shower/shower) [ar
 Uses Web Component to create navigation.
 ## Structure
 `nav.js` - main file. Creates component and puts it in the end of body by itself.
+
 `nav.css` - outer styles to position navigation. Includes classes to change position. Add one of them to body (shower class).
 
 Also some changes are done to `shower.js` and theme font files.
