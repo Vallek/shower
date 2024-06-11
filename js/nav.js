@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const navComponent = document.createElement('vallek-shower-nav');
 body.appendChild(navComponent);
 const template = document.createElement("template");
-template.innerHTML = `
+template.innerHTML = /*html*/`
 <style>
   .nav {
     font-size: revert;
